@@ -1,5 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import CategoriesContainer from './containers/CategoriesContainer';
 
 class App extends React.Component{
@@ -13,4 +12,4 @@ class App extends React.Component{
   } 
 }
 
-export default connect()(App);
+export default App;

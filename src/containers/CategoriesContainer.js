@@ -1,14 +1,29 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import {fetchCategories} from '../actions/fetchCategories';
+import Categories from '../components/Categories';
+import CategoryList from '../components/CategoryList';
 
 class CategoriesContainer extends React.Component {
     
-    render() {
+  componentDidMount() {
+    this.props.fetchCategories()
+  }
+    
+  render() {
         return (
           <div >
-            Mindfull Child
+            <Categories categories={this.props.categories}/>
+            <CategoryList/>
           </div>
         );
       }
     }
 
-export default CategoriesContainer;
+    const mapStateToProps = state => {
+      return {
+        categories: state.categories
+      }
+    }
+
+export default connect(mapStateToProps, {fetchCategories})(CategoriesContainer);
