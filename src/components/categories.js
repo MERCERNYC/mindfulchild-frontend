@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const Categories = (props) => {
  
     return (
@@ -8,5 +9,7 @@ const Categories = (props) => {
         </div>
     )
 }
+
+
 
 export default Categories;
