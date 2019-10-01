@@ -1,10 +1,17 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import {Route, Switch} from 'react-router-dom'
 import {fetchCategories} from '../actions/fetchCategories';
 import Categories from '../components/Categories';
+import Category from '../components/Category';
 
 
 class CategoriesContainer extends React.Component {
+
+  // constructor() {
+  //   super()
+  //   this.state = { categorie: [] }
+  // }
     
   componentDidMount() {
     this.props.fetchCategories()
@@ -13,7 +20,10 @@ class CategoriesContainer extends React.Component {
   render() {
         return (
           <div >  
-            <Categories categories={this.props.categories}/>
+           <Switch>
+              <Route path='/categories/:id' render={(routerProps) => <Category {...routerProps} category={this.props.category}/>}/>
+              <Route path='/categories' render={(routerProps) => <Categories {...routerProps} category={this.props.category}/>}/>
+            </Switch>
           </div>
         );
       }

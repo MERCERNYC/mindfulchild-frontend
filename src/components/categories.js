@@ -1,12 +1,14 @@
 import React from 'react';
+
 import Category from './Category';
 
-const Categories = (props) => {
+const Categories = ({categories })=> {
  
     return (
         <div>
-          {props.categories.map(category => 
+          {categories && categories.map(category => 
           <div key={category.id}><Category category={category}/></div>)}
+          
         </div>
     )
 }

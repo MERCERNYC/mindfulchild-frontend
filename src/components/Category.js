@@ -1,12 +1,13 @@
 import React from 'react';
 
 const Category = (props) => {
-
   console.log(props)
+  
   return (
-    <div>
-       {props.category.title}
-    </div>
+    <>
+    <h2> {props.category.title}  </h2>
+    <h3> {props.category.detail} </h3>
+    </>
   );
 }
 
