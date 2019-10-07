@@ -4,15 +4,15 @@ import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import CardDeck from 'react-bootstrap/CardDeck'
 
-import { PhotoPlaceholder } from 'react-placeholder-image';
+// import { PhotoPlaceholder } from 'react-placeholder-image';
 
 const Category = ({category}) => {
   
   return (
     <CardDeck>
   <Card>
-    <Card.Img variant="top" src="" />
-    {<PhotoPlaceholder width={300} height={300} />}
+    <Card.Img variant="top" src="{category.url}/100px180" />
+    {/* {<PhotoPlaceholder width={300} height={300} />} */}
     <Card.Body>
       <Card.Title>{category.title}</Card.Title>
       <Card.Text>{category.detail}</Card.Text>
