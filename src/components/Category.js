@@ -1,14 +1,20 @@
 import React from 'react';
 
-const Category = (props) => {
-  console.log(props)
+const Category = ({category}) => {
   
   return (
-    <>
-    <h2> {props.category.title}  </h2>
-    <h3> {props.category.detail} </h3>
-    </>
+     <div className='card z-depth-0 category-summary'>
+        <div className='card-content grey-text text-darken-3'>
+          <span className='card-title'> { category.title}</span>
+          <p>{category.detail}</p>
+        </div>
+     </div>
+
   );
 }
 
+
+
+
 export default Category;
+

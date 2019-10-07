@@ -1,12 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 function NavBar() {
   return (
-    <div className="nav">
-      <h1>Mindful Child</h1>
-    </div>
+    <nav class="nav-wrapper indigo lighten-4">
+        <Link to='/' class="brand-logo">MindFul Child</Link>
+        
+  </nav>
   )
 }
+
+
 
 export default NavBar;
 

@@ -1,37 +1,44 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import {Route, Switch} from 'react-router-dom'
+import { connect } from 'react-redux';//HOC
 import {fetchCategories} from '../actions/fetchCategories';
 import Categories from '../components/Categories';
-import Category from '../components/Category';
 
 
 class CategoriesContainer extends React.Component {
 
-  // constructor() {
-  //   super()
-  //   this.state = { categorie: [] }
-  // }
     
   componentDidMount() {
     this.props.fetchCategories()
   }
     
+  //access props data and pass to category
+  //use destructuring that grabs the categories object out of the props
+
   render() {
+
+    const {categories} = this.props;
+    //pass down as a prop to categories list component
+    //Categories categories={this.props.categories}
+  
         return (
-          <div >  
-           <Switch>
-              <Route path='/categories/:id' render={(routerProps) => <Category {...routerProps} category={this.props.category}/>}/>
-              <Route path='/categories' render={(routerProps) => <Categories {...routerProps} category={this.props.category}/>}/>
-            </Switch>
+          <div className='categories container'>
+            <div className='row'>
+              <div className='col s12 m6'>
+                <Categories categories={categories} />
+              </div>
+              
+            </div>
           </div>
+         
         );
       }
     }
 
+//pass this function to connect so it knows what data to get from the store mapping that to props object
     const mapStateToProps = state => {
+      
       return {
-        categories: state.categories
+         categories: state.categories
       }
     }
 

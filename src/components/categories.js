@@ -2,17 +2,20 @@ import React from 'react';
 
 import Category from './Category';
 
-const Categories = ({categories })=> {
- 
+const Categories = ({categories})=> {
+
     return (
-        <div>
-          {categories && categories.map(category => 
-          <div key={category.id}><Category category={category}/></div>)}
-          
+
+        <div className='category-list section'>
+          {categories && categories.map(category => {
+            return (
+              <Category category={category} key={category.id} />
+            )
+          })}
         </div>
     )
 }
 
 
-
 export default Categories;
+
