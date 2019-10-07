@@ -1,16 +1,15 @@
-.App {
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center;
+.header {
     text-align: center;
-}
+  }
 
-.App-content {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 40px;
-}
+.navbar-default {
+    background: none;
+  }
+
+.jumbotron {
+    background-image: url("/img/_main.jpg");
+    background-size: cover;
+  }
+
+
+  

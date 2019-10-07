@@ -5,6 +5,8 @@ import NavBar from './components/NavBar'
 import Home from './components/Home';
 import NotFound from './components/NotFound'
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 
