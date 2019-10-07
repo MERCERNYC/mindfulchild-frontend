@@ -1,20 +1,24 @@
 import React from 'react';
+import Card from 'react-bootstrap/Card'
+
 
 const Category = ({category}) => {
   
   return (
-     <div className='card z-depth-0 category-summary'>
-        <div className='card-content grey-text text-darken-3'>
-          <span className='card-title'> { category.title}</span>
-          <p>{category.detail}</p>
-        </div>
-     </div>
+
+    <Card>
+      <Card.Img variant="top" src="holder.js/100px160" />
+      <Card.Body>
+        <Card.Title>{category.title}</Card.Title>
+        <Card.Text>
+        {category.detail}
+        </Card.Text>
+      </Card.Body>
+    </Card>
 
   );
 }
 
-
-
-
 export default Category;
+
 

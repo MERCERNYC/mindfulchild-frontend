@@ -1,14 +1,20 @@
 import React from 'react';
+import Navbar from 'react-bootstrap/Navbar'
 import { Link } from 'react-router-dom'
 
 function NavBar() {
   return (
-    <nav class="nav-wrapper indigo lighten-4">
-        <Link to='/' class="brand-logo">MindFul Child</Link>
-        
-  </nav>
+ 
+      <Navbar expand="lg" variant="light" bg="light">
+        <div class='Navbar.Brand'>
+          <Link >MindFul Child</Link>
+        </div>
+      </Navbar>
+  
   )
 }
+
+  
 
 
 

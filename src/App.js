@@ -7,15 +7,17 @@ import NotFound from './components/NotFound'
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
 
+
 class App extends React.Component{
   render() {
     return (
      <Router>
         <div className="App">  
            <NavBar/>
+           
            <Switch>
               <Route exact path='/categories' component={CategoriesContainer}/>
-              <Route exact path='/categories/:category.id' component={CategoriesContainer}/>
+              <Route exact path='/categories/:id' component={CategoriesContainer}/>
               <Route path='/' component={Home}/>
               <NotFound/>
            </Switch>

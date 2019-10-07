@@ -4,6 +4,7 @@ import {fetchCategories} from '../actions/fetchCategories';
 import Categories from '../components/Categories';
 
 
+
 class CategoriesContainer extends React.Component {
 
     
@@ -21,15 +22,13 @@ class CategoriesContainer extends React.Component {
     //Categories categories={this.props.categories}
   
         return (
-          <div className='categories container'>
+          <div className='card-decker'>
             <div className='row'>
               <div className='col s12 m6'>
                 <Categories categories={categories} />
-              </div>
-              
+              </div>    
             </div>
           </div>
-         
         );
       }
     }
