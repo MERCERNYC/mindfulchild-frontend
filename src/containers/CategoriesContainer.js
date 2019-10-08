@@ -24,7 +24,7 @@ class CategoriesContainer extends React.Component {
         return (
           <div className='card-decker'>
             <div className='row'>
-              <div className='col s12 m6'>
+              <div className='col s12 m2'>
                 <Categories categories={categories} />
               </div>    
             </div>
