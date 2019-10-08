@@ -14,8 +14,10 @@ class App extends React.Component{
     return (
      <Router>
         <div className="App">  
-           <Header/>
-           <Switch>
+         
+          <Header/>
+
+           <Switch>   
               <Route exact path='/categories' component={CategoriesContainer}/>
               <Route exact path='/categories/:id' component={CategoriesContainer}/>
               <Route path='/' component={Home}/>
