@@ -20,6 +20,10 @@ class CategoriesContainer extends React.Component {
     const {categories} = this.props;
     //pass down as a prop to categories list component
     //Categories categories={this.props.categories}
+
+    if (!categories) {
+      return <div> Loading ...</div>
+    }
   
         return (
           <div className='card-decker'>
@@ -34,6 +38,9 @@ class CategoriesContainer extends React.Component {
     }
 
 //pass this function to connect so it knows what data to get from the store mapping that to props object
+//whatever is returned will show up as props 
+//inside categories
+
     const mapStateToProps = state => {
       
       return {

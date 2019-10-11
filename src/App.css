@@ -1,15 +1,18 @@
 .header {
     text-align: center;
   }
-
+ 
 .navbar-default {
     background: none;
+    margin-bottom: 0px;
   }
 
 .jumbotron {
-    background-image: url("/img/_main.jpg");
-    background-size: cover;
+  background: url("/img/_main.jpg")  no-repeat fixed center ;
   }
+  
+
+  
 
 
 

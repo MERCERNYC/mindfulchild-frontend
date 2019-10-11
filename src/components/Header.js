@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 function Header() {
   return (
-    <Navbar navbar-default>
+    <Navbar navbar-default="true">
       <Navbar.Brand as={Link} to='/'><h1>Mindful Child</h1></Navbar.Brand>
     </Navbar>
   )
