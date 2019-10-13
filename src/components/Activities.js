@@ -1,10 +1,15 @@
 import React from  'react'
+import Activity from './Activity';
 
-const Activities = (props) => {
+const Activities = ({activities}) => {
     return (
         <div>
-          Activities Testing
-        </div>
+         {activities && activities.map(activity => {
+             return (
+                <Activity activity={activity} key={activity.id} />
+             )
+         })}
+        </div> 
     );
 }
 

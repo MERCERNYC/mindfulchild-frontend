@@ -7,17 +7,20 @@ import "../App.css";
 const Home = () => {
   return (
 
-    <div class="jumbotron">
-    <div class="container">
+    <div className="jumbotron">
+    <div className="container">
        <>
           <blockquote className="blockquote text-center">
     
-             <h1>Be peaceful, kind and accepting.</h1>
-             <p className="mb-0 ">“For children, mindfulness can offer relief from whatever difficulties they might be encountering in life.” 
-             “It also gives them the beauty of being in the present moment.”</p>
+             <h1>Be peaceful, kind and accepting.</h1><br></br>
+    
+             <h4 className="mb-0 ">“For children, mindfulness can offer relief from whatever difficulties they might be encountering in life.” 
+             “It also gives them the beauty of being in the present moment.”</h4>
+
            <footer className="blockquote-footer mb-3"><cite title="Source Title">Annaka Harris</cite></footer>  
           </blockquote>
-          <div>
+          <div><br></br><br></br><br></br><br></br>
+        
           <h2 className="text-center">
             <Badge  pill variant="light" as={Link} to='/categories'>Start your Journey</Badge>
            </h2>

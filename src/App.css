@@ -8,9 +8,11 @@
   }
 
 .jumbotron {
-  background: url("/img/_main.jpg")  no-repeat fixed center ;
+  background: url("/img/kite.jpg") no-repeat center center fixed; 
+  background-size: cover;
+    color: #fff;
+    min-height: 500px;
   }
-  
 
   
 

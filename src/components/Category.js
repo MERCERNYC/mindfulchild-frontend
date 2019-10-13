@@ -10,7 +10,9 @@ import ActivitiesContainer from  '../containers/ActivitiesContainer'
 // import { PhotoPlaceholder } from 'react-placeholder-image';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 const Category = ({category}) => {
+
   
   return (
     <CardDeck>
@@ -21,7 +23,9 @@ const Category = ({category}) => {
       <Card.Title>{category.title}</Card.Title>
       <Card.Text>{category.detail}</Card.Text>
        <Button variant="outline-info"  as={Link} to={`/categories/${category.id}/activity`}> Learn More</Button>
-      <ActivitiesContainer/>
+       <ActivitiesContainer category={category}/>
+       {/*  Activities Container to have access to category component through props  */}
+      
     </Card.Body>  
     </Card>
   </CardDeck>
