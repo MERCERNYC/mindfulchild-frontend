@@ -1,5 +1,7 @@
 import React  from 'react'
+
 import { connect } from 'react-redux';//HOC
+import Form from 'react-bootstrap/Form'
 
 
 class Newsletter extends React.Component{
@@ -11,10 +13,15 @@ class Newsletter extends React.Component{
     render() { 
         return(
             <div>
-                <form>
-                    <label>Email:</label>
-                    <input type='text'/>
-                </form>
+                <Form>
+  <Form.Group controlId="formBasicEmail">
+    <Form.Label>Email address</Form.Label>
+    <Form.Control type="email" placeholder="Enter email" />
+    <Form.Text className="text-muted">
+      We'll never share your email with anyone else.
+    </Form.Text>
+  </Form.Group>
+  </Form>
             
             </div>
         );

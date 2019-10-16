@@ -15,9 +15,11 @@ class CategoriesContainer extends React.Component {
   //access props data and pass to category
   //use destructuring that grabs the categories object out of the props
 
+
   render() {
 
     const {categories} = this.props;
+ 
     //pass down as a prop to categories list component
     //Categories categories={this.props.categories}
 

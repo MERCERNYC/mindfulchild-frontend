@@ -2,10 +2,14 @@ import React from 'react';
 import Activities from '../components/Activities'
 
 
+
+
 class ActivitiesContainer extends React.Component {
     
     render () {
         const {activities} = this.props;
+
+        console.log(activities)
 
         if (!activities) {
             return <div> Loading ...</div>
@@ -19,4 +23,5 @@ class ActivitiesContainer extends React.Component {
     }
 } 
 
-export default ActivitiesContainer
+
+export default ActivitiesContainer;
