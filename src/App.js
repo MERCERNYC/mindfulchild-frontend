@@ -22,7 +22,7 @@ class App extends React.Component{
               <Route exact path='/categories' component={CategoriesContainer}/>
               <Route exact path='/newsletter' component={Newsletter}/>
               {/* <Route exact path='/categories/:id' component={CategoriesContainer}/> */}
-              <Route exact path='/categories/:id/activities/:id' component={ActivitiesContainer}/>
+              <Route  path='/categories/:id/activities' component={ActivitiesContainer}/>
               <Route exact path='/' component={Home}/>
               <Route path="*" component={NotFound} />
            </Switch>

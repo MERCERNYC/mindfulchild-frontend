@@ -10,19 +10,27 @@ class Newsletter extends React.Component{
         email:''
     }
 
+    handleChange = (event) => {
+        this.setState({
+            email: event.target.value
+        });
+    }
+
+    handleSubmit =(event) => {
+      event.preventDefault()
+      console.log(this.input.current.value)
+    }
+
     render() { 
         return(
             <div>
-                <Form>
-  <Form.Group controlId="formBasicEmail">
-    <Form.Label>Email address</Form.Label>
-    <Form.Control type="email" placeholder="Enter email" />
-    <Form.Text className="text-muted">
-      We'll never share your email with anyone else.
-    </Form.Text>
-  </Form.Group>
-  </Form>
-            
+                <Form onSubmit={this.handleSubmit}>
+                    <Form.Group controlId="formBasicEmail">
+                        <Form.Label>Email address</Form.Label>
+                        <Form.Control type="text" name="email" value={this.state.email} onChange={this.handleChange} placeholder="Enter email" />   
+                        <input type="submit"/> 
+                    </Form.Group>
+                </Form>    
             </div>
         );
     }

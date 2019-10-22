@@ -3,7 +3,7 @@ import Activity from './Activity';
 
 const Activities = (props) => {
    
-    console.log(props.activities)
+    console.log(props)
 
     return (
         <div>
