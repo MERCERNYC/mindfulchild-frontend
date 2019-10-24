@@ -2,30 +2,33 @@ import React from 'react';
 import { connect } from 'react-redux';//HOC
 
 import Activities from '../components/Activities'
+import {fetchCategories} from '../actions/fetchCategories';
 
 //connect to the store
 
 class ActivitiesContainer extends React.Component {
 
+      
+  componentDidMount() {
+    this.props.fetchCategories()
+  }
  
     render () {
+
         
-         // GET CATEGORYID
-        let categoryId = this.props.match.params.id 
-        
+        //  GET CATEGORYID
+        let categoryId = Number(this.props.match.params.id)
+         
 
-        console.log("Encontrou o categoryId: " + categoryId)
+        let currentCategory = this.props.categories.length > 0 && this.props.categories.filter(category => { 
+            //console.log("filter(title): " + category.title)
+            return category.id === categoryId})[0]
 
-        const {activities} = this.props.categories[categoryId-1]
+        let activities = currentCategory && currentCategory.activities
 
-        console.log("Encontrou o categoryId: " + activities)
-        // for (let i= 0; i < this.props.categories.length; i++) {
-        //     if this.props.categories[i].id == categoryid {
-        //         category = this.props.categories[i]
-        //     }
-        // }
+        console.log("Activities: " + activities)
 
-
+      
         // Get Activities do Category
 
         if (!activities) {
@@ -40,7 +43,7 @@ class ActivitiesContainer extends React.Component {
     }
 } 
 
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
       
     return {
        categories: state.categories
@@ -48,4 +51,4 @@ const mapStateToProps = (state) => {
   }
 
 
-export default connect(mapStateToProps)(ActivitiesContainer);
+export default connect(mapStateToProps, {fetchCategories})(ActivitiesContainer)
