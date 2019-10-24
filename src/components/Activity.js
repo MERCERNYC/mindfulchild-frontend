@@ -19,7 +19,7 @@ const Activity = ({activity}) => {
           <br/>
           <h2>{activity.name}</h2>
           <h4>{activity.description}</h4> 
-          <br/><br/>
+          <br/>
           <h4 className="text-center">
             <Badge  pill variant="light" as={Link} to='/categories'>Back to Categories</Badge>
           </h4>

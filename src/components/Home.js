@@ -2,6 +2,7 @@ import React from 'react';
 import Badge from 'react-bootstrap/Badge'
 import { Link } from 'react-router-dom'
 import "../App.css";
+// import Newsletter from './Newsletter';
 
 
 const Home = () => {
@@ -21,16 +22,14 @@ const Home = () => {
           </blockquote>
           <div><br></br><br></br><br></br><br></br>
         
-          <h2 className="text-center">
-            <Badge  pill variant="light" as={Link} to='/categories'>Start your Journey</Badge>
-           </h2>
-          </div>       
+            <h2 className="text-center">
+              <Badge  pill variant="light" as={Link} to='/categories'>Start your Journey</Badge>
+             </h2>
+          </div>    
         </>
       </div>
-     
     </div>
-   
-    
+ 
   );
 };
 

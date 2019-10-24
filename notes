@@ -27,5 +27,46 @@ import Button from 'react-bootstrap/Button'
   </Card.Body>
 </Card>
 
+  ****
+        for (let i= 0; i < this.props.categories.length; i++) {
+            if this.props.categories[i].id == categoryid {
+                category = this.props.categories[i]
+            }
+        }
+
+
+        render () {
+        
+         // GET CATEGORYID
+        let categoryId = this.props.match.params.id 
+
+        // CONFIRMA se aqui o categoryID é válido
+        console.log(categoryId)
+
+                // PROCURA uma category na lista de categories que tenha o mesmo ID 
+                let currentCategory = this.props.categories.filter(category => { return category.id == categoryId })
+
+                 console.log("Encontrou o category: " + currentCategory.id)
+        //const {activities} = this.props.categories[categoryId-1]
+
+        // for (let i= 0; i < this.props.categories.length; i++) {
+        //     if this.props.categories[i].id == categoryid {
+        //         category = this.props.categories[i]
+        //     }
+        // }
+
+
+        // Get Activities do Category
+
+        if (!currentCategory.activities) {
+            return <div> Loading ...</div>
+        }
+
+        return (
+            <div>
+                 <Activities activities={currentCategory.activities} />
+            </div>
+        )
+    }
 
 
