@@ -12,8 +12,13 @@ class CategoriesContainer extends React.Component {
     this.props.fetchCategories()
   }
     
-  //access props data and pass to category
-  //use destructuring that grabs the categories object out of the props
+  //There are three categories of lifecycle methods: mounting, updating, and unmounting.
+// There are three mounting lifecycle methods:
+
+// componentWillMount
+// render
+// componentDidMount
+// When a component mounts, it automatically calls these three methods, in order.
 
 
   render() {
@@ -51,3 +56,6 @@ class CategoriesContainer extends React.Component {
     }
 
 export default connect(mapStateToProps, {fetchCategories})(CategoriesContainer);
+//mapStatetoprops give access to what is currently in store
+
+//Connect is a function communicates with the Provider

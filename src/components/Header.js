@@ -2,7 +2,9 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar'
 import { Link } from 'react-router-dom'
 
-function Header() {
+
+//change to const to keep consistency
+const Header = () => {
   return (
     <Navbar navbar-default="true">
       <Navbar.Brand as={Link} to='/'><h1>Mindful Child</h1></Navbar.Brand>

@@ -7,6 +7,7 @@ import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
+// provider makes the Redux store available to the application
 
 ReactDOM.render(
   <Provider store={ store }>  

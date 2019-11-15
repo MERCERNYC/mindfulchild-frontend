@@ -1,4 +1,5 @@
 export function addEmail (data) {
+    console.log('C');
     return (dispatch) => {
         fetch('http://localhost:3000/api/v1/newsletters', {
             headers:{
@@ -9,6 +10,9 @@ export function addEmail (data) {
             body: JSON.stringify(data)
         })
         .then(response => response.json())
-        .then(email => dispatch({type:'ADD_EMAIL', payload:email}))
+        .then(email => {
+            console.log('D');
+            dispatch({type:'ADD_EMAIL', payload:email})})
     }
+  
  }

@@ -14,9 +14,13 @@
     min-height: 500px;
   }
 
-
+  .img{
+    background: url("/img/_main.jpg") no-repeat center center fixed; 
+    background-size: contain;
+      color: #fff;
+      min-height: 700px;
+    
+    }
   
-
-
 
   

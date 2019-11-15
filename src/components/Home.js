@@ -1,4 +1,5 @@
 import React from 'react';
+import CommentsContainer from '../containers/CommentsContainer'
 import Badge from 'react-bootstrap/Badge'
 import { Link } from 'react-router-dom'
 import "../App.css";
@@ -25,11 +26,19 @@ const Home = () => {
             <h2 className="text-center">
               <Badge  pill variant="light" as={Link} to='/categories'>Start your Journey</Badge>
              </h2>
-          </div>    
+          </div> 
+          <div><br></br>
+             <h2 className="text-center">
+               <Badge  pill variant="light" as={Link} to='/newsletter'>Sign up for our Newsletter</Badge>
+             </h2>
+          </div>      
+
+          <div>
+             <CommentsContainer/>
+          </div>
         </>
       </div>
     </div>
- 
   );
 };
 
