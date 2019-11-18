@@ -1,5 +1,6 @@
 import React from 'react';
 import CommentsContainer from '../containers/CommentsContainer'
+
 import Badge from 'react-bootstrap/Badge'
 import { Link } from 'react-router-dom'
 import "../App.css";
@@ -7,6 +8,7 @@ import "../App.css";
 
 
 const Home = () => {
+
   return (
 
     <div className="jumbotron">
@@ -32,10 +34,11 @@ const Home = () => {
                <Badge  pill variant="light" as={Link} to='/newsletter'>Sign up for our Newsletter</Badge>
              </h2>
           </div>      
-
-          <div>
-             <CommentsContainer/>
-          </div>
+             
+              <div>
+                <CommentsContainer />
+              </div>
+    
         </>
       </div>
     </div>

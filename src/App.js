@@ -22,6 +22,7 @@ class App extends React.Component{
               <Route exact path='/newsletter' component={Newsletter}/>
               <Route  path='/categories/:id/activity' component={ActivitiesContainer}/>
               <Route exact path='/' component={Home}/>
+              
               <Route path="*" component={NotFound} />
            </Switch>        
         </div>
