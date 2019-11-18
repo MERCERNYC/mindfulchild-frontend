@@ -9,7 +9,6 @@ state = {
       
 }
 
-
 // Handle form input field changes & update the state   
 handleChange = (event) => {
     
@@ -17,6 +16,7 @@ handleChange = (event) => {
       [event.target.name]: event.target.value
     })
 }
+
 
  
 
@@ -35,15 +35,20 @@ handleSubmit= (event) =>{
         method: 'POST',
         body: JSON.stringify(this.state)
     })
-   //callback function 
-   .then(response => response.json(
-      
+  //callback function  
+   
+   .then(response => response.json())
+   .then(newComment => {
+       
+       this.props.addComment(newComment)
+    
        this.setState({
            name:'',
            message:''
         })     
+   })
+      
         
-   ))
 }
 
 render() {
