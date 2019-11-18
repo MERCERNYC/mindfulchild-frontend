@@ -12,15 +12,6 @@ class CommentsContainer extends React.Component {
        comments:[]
    
     }
-
-    handleAddComment(comment) {
-        this.setState(prevState => {
-          return {
-            comments: prevState.comments.concat(comment)
-          };
-        });
-      }
-
     
 
     componentDidMount() {
@@ -36,6 +27,19 @@ class CommentsContainer extends React.Component {
     })
   }
 
+  //I used the componentDidUpdate() that is invoked immediately after updating occurs.
+  // This method is not called for the initial render.
+  componentDidUpdate() {
+    fetch('http://localhost:3000/api/v1/comments')
+
+    .then(resp => resp.json())
+    .then(comments => {
+      this.setState({
+       comments:comments
+    }) 
+  })
+}
+
 // pass the comments state as props to the Comments component.
 // This is how the Comments component will get  the comments it renders.
 
@@ -47,7 +51,7 @@ class CommentsContainer extends React.Component {
                    <div className="columns">
                         <div className="column is-half is-offset-one-quarter">
 
-                            <CommentForm handleAddComment={this.handleAddComment}/>
+                            <CommentForm />
                            
                             <Comments comments={this.state.comments} />
                         </div>
