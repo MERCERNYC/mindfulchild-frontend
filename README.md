@@ -1,4 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![video](http://img.youtube.com/vi/v1Oxvpx1_lU/0.jpg)](http://www.youtube.com/watch?v=v1Oxvpx1_lU "mindfulchild")
+
 
 ## Available Scripts
 
