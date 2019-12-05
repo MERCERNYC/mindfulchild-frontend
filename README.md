@@ -1,20 +1,26 @@
-## Mindful Child 
+# Mindful Child 
 
-Practicing mindfulness can help children and adults to notice the positives, and develop a sense of appreciation and gratitude. Users can click on a category that leads to an activity mindful video of that specific category. If users wish to see all the 3 categories. User also can leave a comment and sign up for a newsletter. 
+Practicing mindfulness can help children and adults to notice the positives, and develop a sense of appreciation and gratitude. This application provides a platform on which users can click on a category that leads to an activity mindful video of that specific mindful category. User can also can leave a comment and sign up for a newsletter. 
 
 #### Code License: https://opensource.org/licenses/MIT
 
 ### Installation
 
-You can install this application by running git clone https://github.com/Awilmerding1/farmers-markets.git .
+You can install this application by running git clone https://github.com/MERCERNYC/mindfulchild-frontend and https://github.com/MERCERNYC/mindfulchild-backend
 
 ### Usage
 
-After cloning the repository, enter the farmers-markets directory on your computer.
+After cloning the repository, enter the mindfulchild-backend directory on your computer.
 
-   -Run bundle install
+   . Run bundle install
 
-   -Then run rake db:migrate and rake db:seed
+   . Then run rake db:migrate and rake db:seed
+   
+   . Run rake start
+   
+ After cloning the repository, enter the mindfulchild-frontend directory on your computer.
+
+   . Run npm install
 
 ### Contributing
 
