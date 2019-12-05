@@ -5,11 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 ## Available Scripts
-![mindful](https://gph.is/g/Z7dy5bq)
-https://camo.githubusercontent.com/c1e0a4613927efe05ece4a3c0c066bdc84df3a3b/68747470733a2f2f6770682e69732f672f5a376479356271
-
-
-
+![Alt Text](https://github.com/MERCERNYC/mindfulchild-frontend/raw/master/path/to/mindful.gif)
 
 In the project directory, you can run:
 
