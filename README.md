@@ -2,7 +2,7 @@
 
 Practicing mindfulness can help children and adults to notice the positives, and develop a sense of appreciation and gratitude. This application provides a platform on which users can click on a category that leads to an activity mindful video of that specific mindful category. User can also can leave a comment and sign up for a newsletter. 
 
-![Image of gif](https://giphy.com/gifs/VekDZL7rEPDWHOqNPL)
+![Image of gif](https://imgur.com/a/anEHOuv)
 
 #### Code License: https://opensource.org/licenses/MIT
 
