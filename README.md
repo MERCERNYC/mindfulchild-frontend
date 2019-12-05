@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-[![video](http://img.youtube.com/vi/v1Oxvpx1_lU/0.jpg)](http://www.youtube.com/watch?v=v1Oxvpx1_lU "mindfulchild")
 
+<iframe src="https://giphy.com/embed/emBNXiGRgM48qxu0fu" width="480" height="288" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/emBNXiGRgM48qxu0fu">via GIPHY</a></p>
 
 ## Available Scripts
 
