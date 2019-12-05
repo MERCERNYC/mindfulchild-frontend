@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-<iframe src="https://giphy.com/embed/emBNXiGRgM48qxu0fu" width="480" height="288" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/emBNXiGRgM48qxu0fu">via GIPHY</a></p>
+https://giphy.com/gifs/emBNXiGRgM48qxu0fu/html5
 
 ## Available Scripts
 
