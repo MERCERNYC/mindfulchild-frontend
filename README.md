@@ -1,19 +1,12 @@
 # Mindful Child 
 
-Practicing mindfulness can help children and adults to notice the positives, and develop a sense of appreciation and gratitude. This application provides a platform on which users can click on a category that leads to an activity mindful video of that specific mindful category. User can also can leave a comment and sign up for a newsletter. 
-
+Practicing mindfulness can help children and adults to notice the positives, and develop a sense of appreciation and gratitude. This application provides a platform on which users can click on a category that leads to an activity mindful video of that specific category. User can also can leave a comment and sign up for a newsletter. 
 
 #### Code License: https://opensource.org/licenses/MIT
 
-### Installation
-
-You can install this application by running git clone 
-https://github.com/MERCERNYC/mindfulchild-frontend 
-https://github.com/MERCERNYC/mindfulchild-backend
-
 ### Usage
 
-After cloning the repository, enter the mindfulchild-backend directory on your computer.
+After cloning the repository https://github.com/MERCERNYC/mindfulchild-backend, enter the mindfulchild-backend directory on your computer.
 
    . Run bundle install
 
@@ -21,7 +14,7 @@ After cloning the repository, enter the mindfulchild-backend directory on your c
    
    . Run rake start
    
- After cloning the repository, enter the mindfulchild-frontend directory on your computer.
+ After cloning the repository https://github.com/MERCERNYC/mindfulchild-frontend , enter the mindfulchild-frontend directory on your computer.
 
    . Run npm install
 
