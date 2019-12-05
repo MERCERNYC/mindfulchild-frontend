@@ -5,7 +5,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 ## Available Scripts
-![](mindfulchild.gif)
+
+![](mindful.gif)
 
 In the project directory, you can run:
 
