@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 ## Available Scripts
-![alt text](public/mindful.png)
+![alt text](public/mindful.mp4)
 
 
 
