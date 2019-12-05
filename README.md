@@ -3,14 +3,13 @@
 Practicing mindfulness can help children and adults to notice the positives, and develop a sense of appreciation and gratitude. This application provides a platform on which users can click on a category that leads to an activity mindful video of that specific mindful category. User can also can leave a comment and sign up for a newsletter. 
 
 
-![Sample Gif](http://i.imgur.com/a/anEHOuv.gif)
-
-
 #### Code License: https://opensource.org/licenses/MIT
 
 ### Installation
 
-You can install this application by running git clone https://github.com/MERCERNYC/mindfulchild-frontend and https://github.com/MERCERNYC/mindfulchild-backend
+You can install this application by running git clone 
+https://github.com/MERCERNYC/mindfulchild-frontend 
+https://github.com/MERCERNYC/mindfulchild-backend
 
 ### Usage
 
