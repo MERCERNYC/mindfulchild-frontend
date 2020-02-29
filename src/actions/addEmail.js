@@ -1,6 +1,6 @@
 export function addEmail (data) {
     return (dispatch) => {
-        fetch('https://projectmindfulchild.herokuapp.com/api/v1/newsletters', {
+        fetch('http://localhost:3000/api/v1/newsletters', {
             headers:{
                 'Content-Type': 'application/json',
                 'Accept': 'application/json',
