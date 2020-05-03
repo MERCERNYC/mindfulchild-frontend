@@ -1,0 +1,15 @@
+{
+    "frontend": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-mindfulchildfrontend-frontend-124325-authRole",
+            "UnauthRoleArn": "arn:aws:iam::071626235728:role/amplify-mindfulchildfrontend-frontend-124325-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::071626235728:role/amplify-mindfulchildfrontend-frontend-124325-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-mindfulchildfrontend-frontend-124325-deployment",
+            "UnauthRoleName": "amplify-mindfulchildfrontend-frontend-124325-unauthRole",
+            "StackName": "amplify-mindfulchildfrontend-frontend-124325",
+            "StackId": "arn:aws:cloudformation:us-east-1:071626235728:stack/amplify-mindfulchildfrontend-frontend-124325/35f7d210-8d5d-11ea-ad54-0abf94ca9997",
+            "AmplifyAppId": "d1ant5v8rvawte"
+        }
+    }
+}
